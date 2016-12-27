@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)http://jmcglone.com/ -->
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" width="device-width, initial-scale=1.0">
+	<title>Glen Chou - Research</title>		
+	<link href="./support/bootstrap.css" rel="stylesheet">
+	<link href="./support/jumbotron-narrow.css" rel="stylesheet">
+	<link href="./support/style.css" rel="stylesheet">
+</head>
+
+	
+<body>
+	<div class="container">
+		<div class="header">
+			<ul class="nav nav-pills pull-right">
+				<li class="passive"><a href="http://gchou95.github.io/projects.html" title="Projects">Projects</a></li>
+				<li class="passive"><a href="http://gchou95.github.io/cv.pdf" title="CV">CV</a></li>
+				<li class="passive"><a href="http://gchou95.github.io/about.html" title="About Me">About Me</a></li>
+			</ul>
+	<h3 class="text-muted"><a href="http://gchou95.github.io/">Glen Chou</a></h3>
+</div> <!-- /header -->
+			
+<div class="row marketing">
+	<div class="col-lg-12">
+	<h1><center>Relevant Projects</center></h1>
+		<ol>
+			<li> <a href="#researchproj"> Research Projects</a> 
+				<ul>
+					<li> <a href="#nnetproj"> Using neural networks for fast reachable set computations.</a> </li>
+					<li> <a href="#mvcaproj"> Multi-vehicle collision avoidance via Hamilton-Jacobi reachability.</a> </li> 
+					<li> <a href="#trajoptproj"> Motion planning via gradient optimization and learning from experience.</a> </li> 
+				</ul>
+			</li> 
+			<li> <a href="#courseproj"> Course Projects</a> 
+				<ul>
+					<li> <a href="#me107proj"> Control for vehicle docking and payload transfer.</a> </li> 
+					<li> <a href="#ee106aproj"> Optimal path planning for small mobile robots.</a> </li> 
+				</ul>
+			</li> 
+		</ol>
+	</div>
+</div>
+
+<div class="row marketing">
+	<a name="researchproj"> </a>
+	<div class="col-lg-12">
+	<h2><center>Research Projects</center></h2>
+	</div>
+</div>
+			<!-- <div class="jumbotron"> -->
+<div class="row marketing">
+	<a name="nnetproj"> </a>
+	<div class="col-lg-12">
+	<h3>Using neural networks for fast reachable set computations<a href="https://arxiv.org/abs/1611.03158" title="Paper"> [paper]</a> </h3>
+	<h5>Collaborators: Frank Jiang, Mo Chen, Claire Tomlin.</h5>
+		<img style="width:50%;float:left;margin-right:20px;margin-bottom:10px;"src="./support/nnet.png">
+	<p style="text-align:justify"> <b>Overview</b>: Hamilton-Jacobi reachability is a powerful tool that provides theoretical guarantees on system safety and performance, but its computation scales exponentially with system dimension. There exist some approaches for reachable set approximation that somewhat alleviate the exponential scaling, but often require stringent assumptions on the system. Using a neural network, we formulate a method without such restrictions that scales better in time and space complexity by localizing the reachable set computation. </p>
+	<p style="text-align:justify"> <b>Contributions</b>: 
+		<ul>
+			<li style="text-align:justify"> Developed and implemented robust gradient-based method for control synthesis using the neural network output. </li>  
+			<li style="text-align:justify"> Participated in development and implementation of a dynamic training strategy and methods for data generation and optimization. </li>  
+			<li style="text-align:justify"> Participated in design of neural network topology. </li> 
+		</ul>
+	</p>
+
+	</div>
+</div>
+
+<div class="row marketing">
+	<a name="mvcaproj"> </a>
+	<div class="col-lg-12">
+	<h3>Multi-vehicle collision avoidance via Hamilton-Jacobi reachability</h3>
+	<h5>Collaborators: Aparna Dhinakaran, Mo Chen, Prof. Claire Tomlin.</h5>
+		<img style="width:50%;float:left;margin-right:20px;margin-bottom:10px;"src="./support/mvca.png">
+	<p style="text-align:justify"> <b>Overview</b>: Prior work using mixed integer programming has resulted in safety guarantees for systems of three UAVs, but this method does not generalize to systems with more UAVs. We propose a hybrid framework that uses Hamilton-Jacobi reachability for formal verification of systems of N+1 vehicles, where N is the number of vehicles that can be safely avoided using an existing collision avoidance algorithm. </p>
+	<p style="text-align:justify"> <b>Contributions</b>: 
+		<ul> 
+			<li style="text-align:justify"> Participated in design of collision-avoidance algorithm. </li>  
+			<li style="text-align:justify"> Implemented numerical simulations of algorithm. </li> 
+		</ul>
+	</p>
+
+	</div>
+</div>
+
+<div class="row marketing">
+	<a name="trajoptproj"> </a>
+	<div class="col-lg-12">
+	<h3>Motion planning via gradient optimization and learning from experience</h3>
+	<h5>Collaborators: Prof. Anca Dragan.</h5>
+		<img style="width:50%;float:left;margin-right:20px;margin-bottom:10px;"src="./support/trajopt.png">
+	<p style="text-align:justify"> <b>Overview</b>: The goal of this project is to improve the performance of the state-of-the-art motion planner TrajOpt. While TrajOpt has high success rates, the types of environments and constraints that tend to trigger failures are unclear. We aim to better characterize the cases that cause TrajOpt to fail and improve performance by learning initializations that will improve convergence to a safe trajectory, even in the presence of humans in the environment. We also aim to learn trajectories from experience to avoid repeated failures. </p>
+	<p style="text-align:justify"> <b>Contributions</b>: 
+		<ul>
+			<li style="text-align:justify"> Implementing a random, realistic environment generator to serve as a testbed for characterizing hard problems for TrajOpt. </li>  
+			<li style="text-align:justify"> Designing and implementing framework to learn optimizer initializations that improve convergence to a feasible trajectory. </li> 
+			<li style="text-align:justify"> Designing and implementing a framework to learn trajectories from experience. </li>
+		</ul>
+	</p>
+
+	</div>
+</div>
+
+<div class="row marketing">
+	<a name="courseproj"> </a>
+	<div class="col-lg-12">
+	<h2><center>Course Projects</center></h2>
+	</div>
+</div>
+
+<div class="row marketing">
+	<a name="me107proj"> </a>
+	<div class="col-lg-12">
+	<h3>Control for vehicle docking and payload transfer</h3>
+	<h5>Course: Mechanical Engineering Laboratory.</h5>
+		<img style="width:50%;float:left;margin-right:20px;margin-bottom:10px;"src="./support/me107.png">
+	<p style="text-align:justify"> This project is inspired by the midair refueling control problem and involves a system of two cars, where one car is teleoperated and another car is autonomously controlled, moving on a bumpy track. The goal is to control the autonomous car to dock and deliver a payload to the teleoperated car. We implemented an overhead vision system and an ultrasonic sensor array to provide position and velocity data for a PID controller.</p> 
+
+	</div>
+</div>
+
+<div class="row marketing">
+	<a name="ee106aproj"> </a>
+	<div class="col-lg-12">
+	<h3>Optimal path planning for small mobile robots</h3>
+	<h5>Course: Introduction to Robotics.</h5>
+		<img style="width:50%;float:left;margin-right:20px;margin-bottom:10px;"src="./support/ee106a.jpg">
+	<p style="text-align:justify"> This project is inspired by the need for cheap navigation and mapping in unsafe environments, such as an unstable building after a natural disaster. We use cheap, small, mobile robots (Zumies) to navigate cluttered environments to find a hidden goal state, which can only be detected by the cameras mounted on the Zumies. We implemented an overhead vision system and a Bellman-Ford path planning algorithm to control the Zumies to find the goal efficiently. </p> 
+
+	</div>
+</div>
+
+			
+<div class="footer">
+	<!-- <div class="row">
+	<div class="col-sm-8">
+	<p><small>© jmcglone 2016</small></p>
+	</div>
+	<div class="col-sm-4">
+	<p class="pull-right"><small><a href="http://jmcglone.com/about" title="About this site">About this site</a></small></p>
+	</div>
+	</div> -->
+</div> <!-- /footer -->
+
+		
+		</div> <!-- /container -->
+	
+	
+		<!-- javascript at the end of the doc so page loads faster -->
+<script src="./support/jquery.js"></script>
+<script src="./support/bootstrap.min.js"></script>
+<script src="./support/library.js"></script>
+<script src="./support/run_prettify.js"></script>
+	
+	
+
+
+</body>
+
+</html>
